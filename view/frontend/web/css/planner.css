@@ -1,0 +1,13 @@
+body.planner .page-main{
+    padding-bottom:0px;
+    margin:0px;
+    max-width: 100%;
+}
+body.planner .page-main .columns .column.main{
+    padding-bottom:0px;
+}
+
+body.planner .page-main .columns .column.main #prodboard-container{
+    overflow: hidden;
+    height: 100vh;
+}

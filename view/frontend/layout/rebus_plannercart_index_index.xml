@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="empty" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Rebus_PlannerCart::css/planner.css"/>
+    </head>
+    <body>
+        <attribute name="class" value="planner"/>
+
+        <referenceContainer name="main">
+            <block class="Rebus\PlannerCart\Block\PlannerCart" name="planner" template="Rebus_PlannerCart::index.phtml">
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="copyright" remove="true"/>
+        <referenceBlock name="page.main.title" remove="true"/>
+        <referenceBlock name="authentication-popup" remove="true"/>
+        <referenceBlock name="footer.bottom" remove="true" />
+    </body>
+</page>

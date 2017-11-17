@@ -1,0 +1,26 @@
+<div id="prodboard-container" style="min-width: 900px; min-height: 600px;"></div>
+<script src="//code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<!--<script src="//kitchen.prodboard.com/inject/SR_56733a1fc00b48b3a680009038c2567f/H4UF.js" type="text/javascript" xml="space"></script>-->
+
+<script src="//kitchen.prodboard.com/inject/SR_56733a1fc00b48b3a680009038c2567f/H4UF.js" type="text/javascript"></script>
+<script type="text/javascript">
+    window.addEventListener("message", function(event){
+        if (Object.keys(event.data).length && event.data) {
+            if (event.data.items && Object.keys(event.data.items).length) {
+                var data = event.data; console.log(data);
+                jQuery.ajax({
+                    type: 'post',
+                    url: '3dplanner/index/planner',
+                    data: data,
+                    dataType: 'json'
+                }).success(function (data) {
+                    if(data == 'success'){
+
+                        window.location.href="checkout/cart";
+                    }
+
+                });
+            }
+        }
+    }, false);
+</script>
