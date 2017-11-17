@@ -6,13 +6,7 @@
   ],
   "type": "magento2-module",
   "version": "1.0.0",
-  "authors": [
-    {
-      "name": "Rebus",
-      "email": "info@rebus.digital",
-      "homepage": "http://rebus.digital/",
-      "role": "Developer"
-    }
+  
   ],
   "autoload": {
     "files": [ "registration.php" ],
